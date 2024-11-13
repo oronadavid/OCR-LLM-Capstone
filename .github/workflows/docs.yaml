@@ -30,5 +30,5 @@ jobs:
         run: pip install -r docs/requirements.txt
 
       - name: Publish docs
-        
+
         run: mkdocs gh-deploy
