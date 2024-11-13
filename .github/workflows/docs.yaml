@@ -7,6 +7,8 @@ on:
 
 jobs:
   docs:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
@@ -28,4 +30,5 @@ jobs:
         run: pip install -r docs/requirements.txt
 
       - name: Publish docs
+        
         run: mkdocs gh-deploy
