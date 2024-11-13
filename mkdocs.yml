@@ -4,6 +4,6 @@ nav:
   - Home: index.md
 
 theme:
-  name: mkdocs-material
+  name: material
   palette:
     primary: deep orange
