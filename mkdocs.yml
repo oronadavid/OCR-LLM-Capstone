@@ -30,7 +30,7 @@ theme:
   features:
     - content.code.copy
     - content.tabs.link
-  
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
