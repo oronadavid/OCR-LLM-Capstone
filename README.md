@@ -1,8 +1,19 @@
-<p align="center"><img src="./images/Blueprints-logo.png" width="35%" alt="Project logo"/></p>
+<p align="center">
+  <picture>
+    <!-- When the user prefers dark mode, show the white logo -->
+    <source media="(prefers-color-scheme: dark)" srcset="./images/Blueprint-logo-white.png">
+    <!-- When the user prefers light mode, show the black logo -->
+    <source media="(prefers-color-scheme: light)" srcset="./images/Blueprint-logo-black.png">
+    <!-- Fallback: default to the black logo -->
+    <img src="./images/Blueprint-logo-black.png" width="35%" alt="Project logo"/>
+  </picture>
+</p>
 
 This blueprint guides you to ...
 
-### 👉 📖 For more detailed guidance on using this project, please visit our [Docs here](https://mozilla-ai.github.io/Blueprint-template/)
+📘 To explore this project further and discover other Blueprints, visit the [**Blueprints Hub**](https://developer-hub.mozilla.ai/).
+
+👉 📖 For more detailed guidance on using this project, please visit our [**Docs here**](https://mozilla-ai.github.io/Blueprint-template/)
 
 ### Built with
 - Python 3.10+
