@@ -30,7 +30,9 @@ These docs are your companion to mastering this Blueprint.
 - **[Future Features & Contributions](future-features-contributions.md):** Learn about exciting upcoming features and how to contribute to the project.
 
 
-Have more questions? Reach out to us on [GitHub Discussions](https://github.com/mozilla-ai/blueprint-template/discussions).
+Have more questions? Reach out to us on Discord and we'll see how we can help:
+
+<a target="_blank" href="https://discord.gg/c3Mxff4H"><img src="https://dcbadge.limes.pink/api/server/c3Mxff4H" alt="" /></a>
 
 ---
 
