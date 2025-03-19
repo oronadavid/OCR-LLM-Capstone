@@ -1,6 +1,7 @@
 from ollama import chat
 from ollama import ChatResponse
 
+# ENTER THE OLLAMA NAMES OF THE MODELS TO TEST HERE v
 models_to_use = ['gemma3:1b', 'llama3.2', 'deepseek-r1']
 
 ocr_input = '''
