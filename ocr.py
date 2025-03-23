@@ -1,14 +1,15 @@
 # --------------------------------------------------------------------------------------------------------
-# Description: This script extracts text from bank statement images using Tesseract OCR.
+# Description: This script extracts text from bank statement images using Tesseract OCR, including bounding boxes.
 # Author: Connor Bennett and David Orona
-# Date: 2021-08-10`
+# Date: 2021-08-10
 # --------------------------------------------------------------------------------------------------------
 
-# IMPORTSS
+# IMPORTS
 import pytesseract
 import cv2
 import os
 import argparse
+import json
 from PIL import Image
 
 def preprocess_image(image_path):
@@ -19,29 +20,50 @@ def preprocess_image(image_path):
     image = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
     return image
 
-def extract_text(image_path):
-    """Extracts text from a bank statement image using Tesseract OCR."""
+def extract_text_with_bboxes(image_path):
+    """Extracts text from a bank statement image using Tesseract OCR with bounding boxes."""
     image = preprocess_image(image_path)
-    text = pytesseract.image_to_string(Image.fromarray(image), config='--psm 4 --oem 3')
-    print(f"\nExtracted text from {image_path}:\n{text}\n")  # Print extracted text for debugging
-    return text
+    
+    # Use Tesseract to get OCR results with bounding boxes
+    data = pytesseract.image_to_data(Image.fromarray(image), output_type=pytesseract.Output.DICT, config='--psm 6 --oem 3')
+    
+    extracted_data = []
+    for i in range(len(data["text"])):
+        text = data["text"][i].strip()
+        if text:  # Ignore empty results
+            extracted_data.append({
+                "text": text,
+                "left": data["left"][i],
+                "top": data["top"][i],
+                "width": data["width"][i],
+                "height": data["height"][i],
+                "confidence": data["conf"][i]
+            })
+    
+    return extracted_data
 
 def process_folder(folder_path):
-    """Processes all images in a folder and extracts text."""
+    """Processes all images in a folder and extracts text with bounding boxes."""
     results = {}
     for filename in os.listdir(folder_path):
         if filename.lower().endswith(('.jpg', '.png', '.jpeg')):
             file_path = os.path.join(folder_path, filename)
             print(f"Processing: {file_path}")
-            extracted_text = extract_text(file_path)
-            results[filename] = extracted_text
+            extracted_data = extract_text_with_bboxes(file_path)
+            results[filename] = extracted_data
+
     return results
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Extract text from bank statement images in a folder.")
+    parser = argparse.ArgumentParser(description="Extract text from bank statement images with bounding boxes.")
     parser.add_argument("folder", type=str, help="Path to the folder containing bank statement images.")
+    parser.add_argument("--output", type=str, default="output.json", help="Output JSON file to store results.")
     args = parser.parse_args()
     
     extracted_results = process_folder(args.folder)
-    for filename, text in extracted_results.items():
-        print(f"\nExtracted text for {filename}:\n{text}")
+
+    # Save results to JSON
+    with open(args.output, "w", encoding="utf-8") as f:
+        json.dump(extracted_results, f, indent=4)
+
+    print(f"\nResults saved to {args.output}")
