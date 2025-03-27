@@ -1,74 +1,45 @@
-from ollama import chat
-from ollama import ChatResponse
+# llm.py
 
-# ENTER THE OLLAMA NAMES OF THE MODELS TO TEST HERE v
-models_to_use = ['llama3.2']
+import json
+from ollama import chat, ChatResponse
 
-ocr_input = '''
-1 =CHOICE                                                                               duly 1, 2018 through July 31, 2018
-                                                                                        Primary Account, 00000958581485
-URNGrtin Choice Bank ,
-Weet Vigra.
-Courky Proada, WIV 70826-0100                                                           CUSTOMER SERVICE INFORMATION
-                                                                                        website: weer. choleebank.com
-                                                                                        “Serioe Center: “1-800-555-6035
-                                                                                        iapeleneventanety bal Tae ld ay iNet iniematonal Calls: eee, a —a
-Company Name                                                                            Contact ua by phono for questions, on this 5
-Company Adcroas                                                                         ‘statement, change Information, and general —_—_—_
-State, Zip.                                                                             inquiries, 24 hours a cay, 7 cays a woek —_—,
-—=
-Account Summary 
-——*==,=
-Opening Balance                                           $5,234.09 =
-Withdravaals                                              $2,395.67 —
-Deposits                                                  $2,872.45
-Closing Balanco on Apr 18,2010                            $9,710.87
-
-Your Transaction Detalls
-Dato              Detalls              Withdrawals              Deposits:              Balance
-Ape 8              Opening Balance.                                                    5,234.09
-Apes               Insurance                                    272.45                 5,506.54
-Ape 10             A™                    200.00                                        5,306.54
-Ape 12             Intesnet Transfer     250,00                                        5,556.54
-Ape 12             Payroll                                      2100.00                ‘7,656.54
-Ape 13             Bill payment           135.07                                       ‘7,521.47
-Apr 14             Direct debit                                 200.00                 7,821.47
-Apr 14             Deposit               250.00                                        ‘7,567.87
-Ape 15             Bill payment          525.72                                        7,042.15"
-Ape 17             Bill payment          327.63                                        6,714,52
-Ape?               Bill payment          729.98                                        5,984.56
-Ape 18             Insurance             272.45                                        5,508.54
-Ape 18-            AT™                   200.00                                        5,306.54
-Apr 18             Intemet Transfer                             250,00                 5,556.54
-Ape 18-            Payroll                                      2100,00                "7,656.54
-Ape 18             Bill payment          135.07                                        7,521.47
-Ape 19             Oirect debit          200.00                                        ‘7,321.47
-Ape 19             Deposit                                      250.00                 "7.567.867
-Apr 19             Bill payment          525.72                                        7,042.15
-Ape 20             Sil payment           327.63                                        6,714.52,
-Ape 20             Bil payment           729.96                                        5,984.56
-Apr 20             Deposit                                      250,00                 "7,567.87.
-Ape 20             Bill payment          525.72                                        “7,042.15
-Ape 20             Bill payment          327.63                                        '6,714,52
-Ape 23             Bill payment          729.96                                        5,984.56
-
-Closing Balance $9,710.87
-
-
-'''
-
-for model in models_to_use:
-    print(f"{model.upper()}-------------------------------------------")
+def analyze_bank_statement(text, bboxes, model="llama3.2"):
     response: ChatResponse = chat(model=model, messages=[
-      {
-        'role': 'system',
-        'content': 'Given the following bank statement, give me a list of all of the transations with their dollar amounts. Give me all other listed balance and expense information as well.',
-      },
-      {
-        'role': 'user',
-        'content': ocr_input,
-      },
+        {
+            'role': 'system',
+            'content': (
+                "You're analyzing a bank statement. Use the extracted text and visual metadata (bounding boxes) "
+                "to return:\n"
+                "- All transactions (date, vendor, amount)\n"
+                "- Total debits/credits\n"
+                "- Starting and ending balances\n"
+                "- Overdraft or returned item fees\n"
+                "Respond in markdown or JSON."
+            ),
+        },
+        {
+            'role': 'user',
+            'content': f"Extracted Text:\n{text}\n\nBounding Box Metadata:\n{json.dumps(bboxes)}"
+        },
     ])
-    print(response['message']['content'])
-# or access fields directly from the response object
-#print(response.message.content)
+    return response['message']['content']
+
+if __name__ == "__main__":
+    import os
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Run LLM on OCR outputs.")
+    parser.add_argument("model", type=str, help="Model to use")
+    parser.add_argument("--input_dir", default="outputs", help="Directory with .txt and .json files")
+
+    args = parser.parse_args()
+
+    for fname in os.listdir(args.input_dir):
+        if fname.endswith(".txt"):
+            base = os.path.splitext(fname)[0]
+            with open(os.path.join(args.input_dir, f"{base}.txt"), "r", encoding="utf-8") as f:
+                raw_text = f.read()
+            with open(os.path.join(args.input_dir, f"{base}.json"), "r", encoding="utf-8") as f:
+                bboxes = json.load(f)
+            print(f"\n[{args.model}] --- {base} ---")
+            print(analyze_bank_statement(raw_text, bboxes, args.model))

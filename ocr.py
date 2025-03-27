@@ -1,10 +1,6 @@
-# --------------------------------------------------------------------------------------------------------
-# Description: This script extracts text from bank statement images using Tesseract OCR, including bounding boxes.
-# Author: Connor Bennett and David Orona
-# Date: 2021-08-10
-# --------------------------------------------------------------------------------------------------------
+# ocr
 
-# IMPORTS
+# imports
 import pytesseract
 import cv2
 import os
@@ -13,24 +9,24 @@ import json
 from PIL import Image
 
 def preprocess_image(image_path):
-    """Preprocesses the image for better OCR accuracy."""
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-    image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)  # Scale up
-    image = cv2.GaussianBlur(image, (5, 5), 0)  # Reduce noise
+    image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+    image = cv2.GaussianBlur(image, (5, 5), 0)
     image = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
     return image
 
-def extract_text_with_bboxes(image_path):
-    """Extracts text from a bank statement image using Tesseract OCR with bounding boxes."""
+def extract_text(image_path):
     image = preprocess_image(image_path)
-    
-    # Use Tesseract to get OCR results with bounding boxes
+    return pytesseract.image_to_string(Image.fromarray(image), config='--psm 4 --oem 3')
+
+def extract_text_with_bboxes(image_path):
+    image = preprocess_image(image_path)
     data = pytesseract.image_to_data(Image.fromarray(image), output_type=pytesseract.Output.DICT, config='--psm 6 --oem 3')
-    
+
     extracted_data = []
     for i in range(len(data["text"])):
         text = data["text"][i].strip()
-        if text:  # Ignore empty results
+        if text:
             extracted_data.append({
                 "text": text,
                 "left": data["left"][i],
@@ -39,46 +35,34 @@ def extract_text_with_bboxes(image_path):
                 "height": data["height"][i],
                 "confidence": data["conf"][i]
             })
-    
     return extracted_data
 
-def extract_text(image_path):
-    """Extracts plain text from a bank statement image using Tesseract OCR."""
-    image = preprocess_image(image_path)
-    text = pytesseract.image_to_string(Image.fromarray(image), config='--psm 4 --oem 3')
-    return text
+def process_image(image_path, output_dir="outputs"):
+    os.makedirs(output_dir, exist_ok=True)
+    filename = os.path.splitext(os.path.basename(image_path))[0]
 
+    raw_text = extract_text(image_path)
+    bboxes = extract_text_with_bboxes(image_path)
 
-def process_folder(folder_path):
-    """Processes all images in a folder and extracts text with bounding boxes."""
-    results = {}
-    for filename in os.listdir(folder_path):
-        if filename.lower().endswith(('.jpg', '.png', '.jpeg')):
-            file_path = os.path.join(folder_path, filename)
-            print(f"Processing: {file_path}")
-            extracted_data = extract_text_with_bboxes(file_path)
-            results[filename] = extracted_data
+    with open(os.path.join(output_dir, f"{filename}.txt"), "w", encoding="utf-8") as f:
+        f.write(raw_text)
 
-    return results
+    with open(os.path.join(output_dir, f"{filename}.json"), "w", encoding="utf-8") as f:
+        json.dump(bboxes, f, indent=2)
+
+    return raw_text, bboxes
+
+def process_folder(folder_path, output_dir="outputs"):
+    os.makedirs(output_dir, exist_ok=True)
+    for fname in os.listdir(folder_path):
+        if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
+            image_path = os.path.join(folder_path, fname)
+            print(f"[OCR] Processing {fname}")
+            process_image(image_path, output_dir)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Extract text from bank statement images with bounding boxes.")
-    parser.add_argument("folder", type=str, help="Path to the folder containing bank statement images.")
-    parser.add_argument("--output", type=str, default="output.json", help="Output JSON file to store results.")
+    parser = argparse.ArgumentParser(description="Run OCR on a folder of images.")
+    parser.add_argument("folder", type=str, help="Folder of images to process.")
+    parser.add_argument("--output", type=str, default="outputs", help="Output directory for .txt and .json files")
     args = parser.parse_args()
-    
-    extracted_results = process_folder(args.folder)
-
-    # Save results to JSON
-    with open(args.output, "w", encoding="utf-8") as f:
-        json.dump(extracted_results, f, indent=4)
-
-    print(f"\nResults saved to {args.output}")
-
-
-"""                                                                               TempiateLAB
-
-October 01, 2019, through November 30, 2019
-B BY. Account Number: 254 100541522695
-B
-"""
+    process_folder(args.folder, args.output)
