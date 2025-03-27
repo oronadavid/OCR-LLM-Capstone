@@ -2,74 +2,59 @@ from ollama import chat
 from ollama import ChatResponse
 
 # ENTER THE OLLAMA NAMES OF THE MODELS TO TEST HERE v
-models_to_use = ['gemma3:1b', 'llama3.2', 'deepseek-r1']
+models_to_use = ['llama3.2']
 
 ocr_input = '''
-Ww ABC BANK Statement Ending 09/21/2021 Page 2 of 2
+1 =CHOICE                                                                               duly 1, 2018 through July 31, 2018
+                                                                                        Primary Account, 00000958581485
+URNGrtin Choice Bank ,
+Weet Vigra.
+Courky Proada, WIV 70826-0100                                                           CUSTOMER SERVICE INFORMATION
+                                                                                        website: weer. choleebank.com
+                                                                                        “Serioe Center: “1-800-555-6035
+                                                                                        iapeleneventanety bal Tae ld ay iNet iniematonal Calls: eee, a —a
+Company Name                                                                            Contact ua by phono for questions, on this 5
+Company Adcroas                                                                         ‘statement, change Information, and general —_—_—_
+State, Zip.                                                                             inquiries, 24 hours a cay, 7 cays a woek —_—,
+—=
+Account Summary 
+——*==,=
+Opening Balance                                           $5,234.09 =
+Withdravaals                                              $2,395.67 —
+Deposits                                                  $2,872.45
+Closing Balanco on Apr 18,2010                            $9,710.87
 
-Look over all transactions
+Your Transaction Detalls
+Dato              Detalls              Withdrawals              Deposits:              Balance
+Ape 8              Opening Balance.                                                    5,234.09
+Apes               Insurance                                    272.45                 5,506.54
+Ape 10             A™                    200.00                                        5,306.54
+Ape 12             Intesnet Transfer     250,00                                        5,556.54
+Ape 12             Payroll                                      2100.00                ‘7,656.54
+Ape 13             Bill payment           135.07                                       ‘7,521.47
+Apr 14             Direct debit                                 200.00                 7,821.47
+Apr 14             Deposit               250.00                                        ‘7,567.87
+Ape 15             Bill payment          525.72                                        7,042.15"
+Ape 17             Bill payment          327.63                                        6,714,52
+Ape?               Bill payment          729.98                                        5,984.56
+Ape 18             Insurance             272.45                                        5,508.54
+Ape 18-            AT™                   200.00                                        5,306.54
+Apr 18             Intemet Transfer                             250,00                 5,556.54
+Ape 18-            Payroll                                      2100,00                "7,656.54
+Ape 18             Bill payment          135.07                                        7,521.47
+Ape 19             Oirect debit          200.00                                        ‘7,321.47
+Ape 19             Deposit                                      250.00                 "7.567.867
+Apr 19             Bill payment          525.72                                        7,042.15
+Ape 20             Sil payment           327.63                                        6,714.52,
+Ape 20             Bil payment           729.96                                        5,984.56
+Apr 20             Deposit                                      250,00                 "7,567.87.
+Ape 20             Bill payment          525.72                                        “7,042.15
+Ape 20             Bill payment          327.63                                        '6,714,52
+Ape 23             Bill payment          729.96                                        5,984.56
 
-ABC seumnbens CHEKING XXXXXXXX1284 (continued)
-Primary Chekin Paycheck
+Closing Balance $9,710.87
 
-     
 
-  
-   
-  
-    
-
-Account Activity
-
-Post Date Debits Credits Balance
-09/10/2021 Signature POS Debit 09/08 GIANT FOOD I $78.22 6,806.09
-09/10/2021 LA FITNESS $15.38 6,790.71
-
-09/11/2021 FT&T MOBILITY ONLINE PMT
-09/14/2021 DEPOSIT
-09/14/2021 DIRECT DEP
-
-$100.30 6,690.41
-
-7,190.89
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-09/14/2021 Signature POS Debit 09/13 MD GIANT FOOD $15.40 9,751 83
-09/17/2021_ ATM Withdrawal_09/15 WV INWOOD. $350.00 9,401.83
-09/17/2021 Signature POS Debit 09/16 MD GIANT FOOD $12.48 9,389.35
-09/17/2021 Signature POS Debit 09/15 MD GIANT FOOD $35.80 9,353.55
-09/18/2021 THE HOME DEPOT ONLINE PMT POS $8.35 9,345.20
-09/18/2021 QORETIRE 0503R3030 $528.12 8,817.08
-09/20/2021 323LA@71557195 $489.57 8,327.51
-09/21/2021 Ending Balance 8,327.51
-Daily Balances
-
-Date Amount Date Amount _Date Amount
-09/04/2021 19,120.43 09/10/2021 6,790.71 09/18/2021 8,817.08
-09/05/2021 7,017.64 09/11/2021 6,690.41 09/20/2021 8,327.51
-09/06/2021 6,562.32 09/14/2021 9,751,83
-
-09/07/2021 7,039.31 09/17/2021 9,353.55
-
-Overdraft and Returned Item Fees Watch for unexpected fees
-
-P Total for this for this period / Total year-to-date
-Total Overdraft Fees 7 0 8000] 00
-
- 
-
-Total Returned Tem Fees PT
 '''
 
 for model in models_to_use:

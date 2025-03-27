@@ -42,6 +42,13 @@ def extract_text_with_bboxes(image_path):
     
     return extracted_data
 
+def extract_text(image_path):
+    """Extracts plain text from a bank statement image using Tesseract OCR."""
+    image = preprocess_image(image_path)
+    text = pytesseract.image_to_string(Image.fromarray(image), config='--psm 4 --oem 3')
+    return text
+
+
 def process_folder(folder_path):
     """Processes all images in a folder and extracts text with bounding boxes."""
     results = {}
@@ -67,3 +74,11 @@ if __name__ == "__main__":
         json.dump(extracted_results, f, indent=4)
 
     print(f"\nResults saved to {args.output}")
+
+
+"""                                                                               TempiateLAB
+
+October 01, 2019, through November 30, 2019
+B BY. Account Number: 254 100541522695
+B
+"""
