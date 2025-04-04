@@ -1,10 +1,12 @@
 # --------------------------------------------------------------------------------------------------------
 # Description: This script extracts text from bank statement images using Tesseract OCR, including bounding boxes.
 # Author: Connor Bennett and David Orona
-# Date: 2021-08-10
+# Date: 2025-03-27
 # --------------------------------------------------------------------------------------------------------
 
-# IMPORTS
+# TODO: Handle text that is not black on white
+# TODO: Ex: In test4.png (First Platypus Bank), the black bar is not read
+
 import pytesseract
 import cv2
 import os
@@ -53,6 +55,70 @@ def process_folder(folder_path):
             results[filename] = extracted_data
 
     return results
+
+def format_with_spacing(json_path):
+    data = {}
+
+    with open(json_path) as f:
+        data = json.load(f)
+
+    for image in data:
+        #print("\n\n\n")
+        #print(image)
+
+        # Determine rows
+        text_row_dictionary = {}
+        current_text = ""
+        current_line_top = 0
+        previous_item = None
+        for text_item in data[image]:
+            if previous_item is not None:
+                # The item is on a new line
+                if abs(previous_item['top'] - text_item['top']) > 25:
+
+                    # Create a new row since this is a new column
+                    text_row_dictionary[text_item['top']] = []
+
+                    # Append the text being held
+                    text_row_dictionary[current_line_top].append(current_text)
+
+                    # Reset the text being held as this is a new text block on a new line
+                    current_text = ""
+
+                    # Save the current top number as it will be the dict index
+                    current_line_top = text_item['top']
+
+                # The item is not next to the previous item
+                elif abs(previous_item['left'] + previous_item['width'] - text_item['left']) > 18:
+
+                    # Append the text being held
+                    text_row_dictionary[current_line_top].append(current_text)
+
+                    # Reset the text being held as this is a new text block on the same line
+                    current_text = ""
+
+            else:
+                # Set the initial current top number as the first element's top
+                current_line_top = text_item['top']
+                # Create a row for the initial column
+                text_row_dictionary[text_item['top']] = []
+
+            # Append the current text, either a new column has started, we are adding to the current text block, or we are starting a new text block
+            current_text += text_item['text'] + " "
+            previous_item = text_item
+
+        output_text = ""
+        for item in text_row_dictionary:
+            text_line = ""
+            for text_block in text_row_dictionary[item]:
+                text_line += f"{text_block} |  "
+            text_line = text_line[:-3]
+            #print(text_line)
+            output_text += text_line + "\n"
+
+        with open(f"output/spaced_formatted_{image}.txt", "w") as f:
+            f.write(output_text)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Extract text from bank statement images with bounding boxes.")
