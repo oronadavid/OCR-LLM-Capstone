@@ -1,0 +1,31 @@
+First Platypus Bank
+
+1234 Kings St., New York, NY 12123
+
+Mary G. Orta Account Number: 1234567890123
+1459 Sherman St. Statement Date: 3/1/2022
+Salina, KS 67401 Period Covered: 2/1/2022 ~ 3/1/2022
+
+Account Summary
+
+Balance on March 1: $25,032.23
+Total Money In: $10,234.23
+Total Money Out: $10,532.51
+
+Transactions
+
+Date) Withdrawal Gaiance
+
+02/01 PGD EasyPay Debit 203.24 22,098.23
+02/02 AB&B Online Payment***** 71.23 22,027.00
+02/04 Check No. 2345 450.00 22,477.00
+02/05 Payroll Direct Dep 23422342 Giants 2,534.65 25,011.65
+02/06 Signature POS Debit - TJP 84.50 24,927.15
+02/07 Check No. 234 1,400.00 23,527.15
+02/08 Check No. 342 25.00 23,552.15
+02/09 FPB AutoPay**** Credit Card 456.02 23,096.13
+02/08 Check No. 123 25.00 23,552.15
+02/09 FPB AutoPay**** Credit Card 156.02 23,096.13
+
+02/08 Cash Deposit 25.00 23,552.15
+

@@ -1,0 +1,9 @@
+{
+    "preprocessing": {
+      "use_grayscale": true,
+      "use_upscale": true,
+      "use_blur": true,
+      "use_threshold": true
+    }
+  }
+  

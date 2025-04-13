@@ -200,12 +200,12 @@
     "confidence": 53
   },
   {
-    "text": "\u2014*\u2014=\u2014\u2014K\u2014_\u2014*_\u2014\u2014_\u2014=\u2014EqK&{EE=E===a+",
+    "text": "\u2014*\u2014\u2014=\u2014\u2014~\u2014~\u2014\u2014~\u2014~\u2014K_Z_\u2014C~<\u2014_~z~z<~\u2014==~E=",
     "left": 1035,
     "top": 287,
     "width": 516,
     "height": 15,
-    "confidence": 0
+    "confidence": 26
   },
   {
     "text": "WebSite:",
@@ -221,7 +221,7 @@
     "top": 306,
     "width": 260,
     "height": 24,
-    "confidence": 76
+    "confidence": 75
   },
   {
     "text": "Customer",
@@ -256,7 +256,7 @@
     "confidence": 0
   },
   {
-    "text": "FollalaSdahA",
+    "text": "HollaaSdatA",
     "left": 86,
     "top": 440,
     "width": 285,
@@ -264,12 +264,12 @@
     "confidence": 0
   },
   {
-    "text": "al",
-    "left": 212,
+    "text": "Mal",
+    "left": 208,
     "top": 427,
-    "width": 22,
+    "width": 26,
     "height": 49,
-    "confidence": 21
+    "confidence": 22
   },
   {
     "text": "SNA",
@@ -280,7 +280,7 @@
     "confidence": 0
   },
   {
-    "text": "AtMondLall",
+    "text": "AtMedLasl",
     "left": 286,
     "top": 440,
     "width": 85,
@@ -288,7 +288,7 @@
     "confidence": 0
   },
   {
-    "text": "ledlathtul\u00e9dddlsbal",
+    "text": "ledlatlatul\u00e9dddlsbal",
     "left": 388,
     "top": 438,
     "width": 286,
@@ -296,20 +296,28 @@
     "confidence": 0
   },
   {
-    "text": "dA",
-    "left": 563,
+    "text": "AA",
+    "left": 572,
     "top": 427,
-    "width": 26,
+    "width": 21,
     "height": 49,
     "confidence": 19
   },
   {
-    "text": "east",
-    "left": 604,
+    "text": "fee",
+    "left": 600,
     "top": 427,
-    "width": 75,
+    "width": 30,
     "height": 49,
-    "confidence": 0
+    "confidence": 44
+  },
+  {
+    "text": "tall",
+    "left": 641,
+    "top": 427,
+    "width": 38,
+    "height": 49,
+    "confidence": 15
   },
   {
     "text": "\u2014",

@@ -1,27 +1,43 @@
-# ocr
+# ocr.py
 
-# imports
 import pytesseract
-import cv2
 import os
 import argparse
 import json
 from PIL import Image
+from preprocessing.ocr_preprocessing import preprocess_image
 
-def preprocess_image(image_path):
-    image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-    image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
-    image = cv2.GaussianBlur(image, (5, 5), 0)
-    image = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
-    return image
+# Load preprocessing config from config.json
+CONFIG_PATH = os.path.join(os.path.dirname(__file__), "..", "config.json")
+
+with open(CONFIG_PATH) as f:
+    config = json.load(f)
+
+pre_cfg = config.get("preprocessing", {})
 
 def extract_text(image_path):
-    image = preprocess_image(image_path)
+    image = preprocess_image(
+        image_path,
+        use_grayscale=pre_cfg.get("use_grayscale", True),
+        use_upscale=pre_cfg.get("use_upscale", True),
+        use_blur=pre_cfg.get("use_blur", True),
+        use_threshold=pre_cfg.get("use_threshold", True)
+    )
     return pytesseract.image_to_string(Image.fromarray(image), config='--psm 4 --oem 3')
 
 def extract_text_with_bboxes(image_path):
-    image = preprocess_image(image_path)
-    data = pytesseract.image_to_data(Image.fromarray(image), output_type=pytesseract.Output.DICT, config='--psm 6 --oem 3')
+    image = preprocess_image(
+        image_path,
+        use_grayscale=pre_cfg.get("use_grayscale", True),
+        use_upscale=pre_cfg.get("use_upscale", True),
+        use_blur=pre_cfg.get("use_blur", True),
+        use_threshold=pre_cfg.get("use_threshold", True)
+    )
+    data = pytesseract.image_to_data(
+        Image.fromarray(image),
+        output_type=pytesseract.Output.DICT,
+        config='--psm 6 --oem 3'
+    )
 
     extracted_data = []
     for i in range(len(data["text"])):
