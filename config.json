@@ -1,9 +1,16 @@
 {
-    "preprocessing": {
-      "use_grayscale": true,
-      "use_upscale": true,
-      "use_blur": true,
-      "use_threshold": true
-    }
+  "preprocessing": {
+    "use_grayscale": true,
+    "use_upscale": true,
+    "use_blur": true,
+    "use_threshold": true
+  },
+  "llm_preprocessing": {
+    "clean_text": true,
+    "normalize_whitespace": true,
+    "remove_headers_footers": true,
+    "standardize_dates": true,
+    "standardize_amounts": true,
+    "extract_transaction_lines": true
   }
-  
+}
