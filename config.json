@@ -1,10 +1,10 @@
 {
-  "preprocessing": {
-    "use_grayscale": true,
-    "use_upscale": true,
-    "use_blur": true,
-    "use_threshold": true
-  },
+"ocr_preprocessing": {
+  "use_grayscale": true,
+  "use_upscale": true,
+  "use_blur": true,
+  "use_threshold": true
+},
   "llm_preprocessing": {
     "clean_text": true,
     "normalize_whitespace": true,

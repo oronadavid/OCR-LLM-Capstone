@@ -1,4 +1,11 @@
 # driver.py
+"""
+This module serves as the driver for the OCR and LLM processing pipeline.
+It manages the flow of data from image preprocessing to text extraction
+and finally to LLM analysis.
+"""
+
+# imports
 import sys
 import os
 
@@ -10,10 +17,21 @@ from llm import analyze_bank_statement
 import argparse
 import json
 
-# run using python src/driver.py images/test_images llama3.2:latest
-#                                   image location    model name
+"""
+From the cli run:
+run using 
+python src/driver.py images/test_images llama3.2:latest
+                        image location |  model name
+"""
+
 
 def run(folder_path, model):
+    """
+    Run the OCR and LLM pipeline on a folder of images.
+    Args:
+        folder_path (str): Path to the folder containing images.
+        model (str): The LLM model to use.
+    """
     for fname in os.listdir(folder_path):
         if not fname.lower().endswith((".png", ".jpg", ".jpeg")):
             continue

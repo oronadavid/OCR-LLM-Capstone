@@ -1,3 +1,11 @@
+# llm.py
+"""
+This module provides functions to analyze bank statements using a large language model (LLM).
+It includes functions to preprocess the text, run the LLM, and postprocess the output.
+It also includes a function to run the LLM on a folder of images.
+"""
+
+# imports
 import os
 import json
 from preprocessing.llm_preprocessing import preprocess_text
@@ -9,16 +17,22 @@ from postprocessing.llm_postprocessing import clean_response
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "..", "config.json")
 with open(CONFIG_PATH) as f:
     config = json.load(f)
-
+# Load the config file, including LLM preprocessing and postprocessing settings
 llm_cfg = config.get("llm_preprocessing", {})
 llm_settings = config.get("llm", {})
 llm_prompt = llm_settings.get("prompt", "You are an assistant.")
 llm_post_cfg = config.get("llm_postprocessing", {})
 
 
-
-
 def analyze_bank_statement(text, bboxes, model="llama3.2"):
+    """
+    Analyze a bank statement using a large language model (LLM).
+    Args:
+        text (str): The raw OCR text.
+        bboxes (list): List of bounding boxes from OCR.
+        model (str): The LLM model to use.
+    Returns:
+        str: The LLM's response."""
     response: ChatResponse = chat(model=model, messages=[
         {
             'role': 'system',
@@ -30,7 +44,6 @@ def analyze_bank_statement(text, bboxes, model="llama3.2"):
         },
     ])
     return response['message']['content']
-
 
 
 if __name__ == "__main__":

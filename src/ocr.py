@@ -1,5 +1,11 @@
 # ocr.py
-
+"""
+This module provides functions to perform OCR on images, including preprocessing steps
+like grayscale conversion, upscaling, blurring, and adaptive thresholding.
+It also includes functions to extract text and bounding box information from images.
+It uses Tesseract OCR by default for text extraction.
+"""
+# imports
 import pytesseract
 import os
 import argparse
@@ -17,12 +23,13 @@ with open(CONFIG_PATH) as f:
 # Load OCR preprocessing settings
 pre_cfg = config.get("ocr_preprocessing", {})
 
-"""
-This module provides functions to perform OCR on images, including preprocessing steps
-like grayscale conversion, upscaling, blurring, and adaptive thresholding.
-It also includes functions to extract text and bounding box information from images.
-"""
 def extract_text(image_path):
+    """
+    Extracts text from an image using OCR.
+    Args:
+        image_path (str): Path to the image file.
+    Returns:
+        str: Extracted text."""
     image = preprocess_image(
         image_path,
         use_grayscale=pre_cfg.get("use_grayscale", True),
@@ -32,14 +39,14 @@ def extract_text(image_path):
     )
     return pytesseract.image_to_string(Image.fromarray(image), config='--psm 4 --oem 3')
 
-"""
-Extracts text from an image using OCR.
-Args:
-    image_path (str): Path to the image file.
-Returns:
-    str: Extracted text.
-"""
 def extract_text_with_bboxes(image_path):
+    """
+    Extracts text and bounding box information from an image using OCR.
+    Args:
+        image_path (str): Path to the image file.
+    Returns:
+        list: List of dictionaries containing text and bounding box information.
+    """
     image = preprocess_image(
         image_path,
         use_grayscale=pre_cfg.get("use_grayscale", True),
@@ -67,15 +74,17 @@ def extract_text_with_bboxes(image_path):
             })
     return extracted_data
 
-"""
-Extracts text and bounding box information from an image using OCR.
-Args:
-    image_path (str): Path to the image file.
-    output_dir (str): Directory to save the output files.
-Returns:
-    tuple: Extracted text and bounding box information.
-"""
+
 def process_image(image_path, output_dir="outputs"):
+    """
+    Processes an image, applies OCR, and saves the results to a text file and a JSON file.
+    Args:
+        image_path (str): Path to the image file.
+        output_dir (str): Directory to save the output files.
+    Returns:
+        str: Extracted text.
+        list: List of bounding boxes with text information.
+    """
     os.makedirs(output_dir, exist_ok=True)
     filename = os.path.splitext(os.path.basename(image_path))[0]
 
@@ -90,15 +99,15 @@ def process_image(image_path, output_dir="outputs"):
 
     return raw_text, bboxes
 
-"""
-Processes a folder of images, applying OCR and saving the results.
-Args:
-    folder_path (str): Path to the folder containing images.
-    output_dir (str): Directory to save the output files.
-Returns:
-    None
-"""
 def process_folder(folder_path, output_dir="outputs"):
+    """
+    Processes all images in a folder, applies OCR, and saves the results to text and JSON files.
+    Args:
+        folder_path (str): Path to the folder containing images.
+        output_dir (str): Directory to save the output files.
+    returns:
+        None
+    """
     os.makedirs(output_dir, exist_ok=True)
     for fname in os.listdir(folder_path):
         if fname.lower().endswith(('.png', '.jpg', '.jpeg')):
