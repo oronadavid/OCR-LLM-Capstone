@@ -12,5 +12,13 @@
     "standardize_dates": true,
     "standardize_amounts": true,
     "extract_transaction_lines": true
+  },
+  "llm_postprocessing": {
+    "strip_markdown": true,
+    "normalize_spacing": true,
+    "extract_json": false
+  },
+  "llm": {
+    "prompt": "You're analyzing a bank statement. Use the extracted text and visual metadata (bounding boxes) to return:\n- All transactions (date, vendor, amount)\n- Total debits/credits\n- Starting and ending balances\n- Overdraft or returned item fees\nRespond in markdown or JSON."
   }
 }

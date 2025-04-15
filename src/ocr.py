@@ -10,11 +10,18 @@ from preprocessing.ocr_preprocessing import preprocess_image
 # Load preprocessing config from config.json
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "..", "config.json")
 
+# Load the config file
 with open(CONFIG_PATH) as f:
     config = json.load(f)
 
-pre_cfg = config.get("preprocessing", {})
+# Load OCR preprocessing settings
+pre_cfg = config.get("ocr_preprocessing", {})
 
+"""
+This module provides functions to perform OCR on images, including preprocessing steps
+like grayscale conversion, upscaling, blurring, and adaptive thresholding.
+It also includes functions to extract text and bounding box information from images.
+"""
 def extract_text(image_path):
     image = preprocess_image(
         image_path,
@@ -25,6 +32,13 @@ def extract_text(image_path):
     )
     return pytesseract.image_to_string(Image.fromarray(image), config='--psm 4 --oem 3')
 
+"""
+Extracts text from an image using OCR.
+Args:
+    image_path (str): Path to the image file.
+Returns:
+    str: Extracted text.
+"""
 def extract_text_with_bboxes(image_path):
     image = preprocess_image(
         image_path,
@@ -53,6 +67,14 @@ def extract_text_with_bboxes(image_path):
             })
     return extracted_data
 
+"""
+Extracts text and bounding box information from an image using OCR.
+Args:
+    image_path (str): Path to the image file.
+    output_dir (str): Directory to save the output files.
+Returns:
+    tuple: Extracted text and bounding box information.
+"""
 def process_image(image_path, output_dir="outputs"):
     os.makedirs(output_dir, exist_ok=True)
     filename = os.path.splitext(os.path.basename(image_path))[0]
@@ -68,6 +90,14 @@ def process_image(image_path, output_dir="outputs"):
 
     return raw_text, bboxes
 
+"""
+Processes a folder of images, applying OCR and saving the results.
+Args:
+    folder_path (str): Path to the folder containing images.
+    output_dir (str): Directory to save the output files.
+Returns:
+    None
+"""
 def process_folder(folder_path, output_dir="outputs"):
     os.makedirs(output_dir, exist_ok=True)
     for fname in os.listdir(folder_path):
