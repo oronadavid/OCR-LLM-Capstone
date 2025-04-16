@@ -1,0 +1,41 @@
+Jan 1, 2023 through Jan 31, 2023
+Mil BANK Primary Account: 0000081818181
+
+Money Instructor Bank
+
+1221 Main Street CUSTOMER SERVICE INFORMATION
+
+Anywhere, US 1000-0001
+SSS
+WebSite: Moneylnstructor.com
+Customer Service: 1-800-555-5555
+
+Faflallutdld ab DLAAtMeadfalll Indlolataldddbadatb ible alll
+00011112 DDA 001 CA 12222 ~YYN T 100000000 05 0000
+John Doe
+101 1* Street,
+
+Anywhere, US
+1001
+
+CHECKING SUMMARY
+
+INSTANCES AMOUNT
+Beginning Balance $10,000.00
+Deposits and Additions 3 300.00
+Checks Paid 2 - 1,000.00
+Other Withdrawals, Fees & Charges a 100
+Ending Balance $9,299.00
+
+This message confirms that you have overdraft protection on your checking account.
+
+TRANSACTIONS
+
+DATE DESCRIPTION AMOUNT
+01/05 Deposit $100.00
+01/09 Check Paid 500.00
+01/14 Check Paid 500.00
+01/15 Deposit 100.00
+01/21 Deposit 100.00
+
+01/25 ATM Fee -1.00

@@ -1,0 +1,986 @@
+[
+  {
+    "text": "\u00ae",
+    "left": 86,
+    "top": 84,
+    "width": 126,
+    "height": 126,
+    "confidence": 39
+  },
+  {
+    "text": "First",
+    "left": 240,
+    "top": 104,
+    "width": 110,
+    "height": 38,
+    "confidence": 96
+  },
+  {
+    "text": "Platypus",
+    "left": 371,
+    "top": 103,
+    "width": 211,
+    "height": 49,
+    "confidence": 96
+  },
+  {
+    "text": "Bank",
+    "left": 605,
+    "top": 103,
+    "width": 119,
+    "height": 39,
+    "confidence": 96
+  },
+  {
+    "text": "1234",
+    "left": 239,
+    "top": 165,
+    "width": 66,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "Kings",
+    "left": 317,
+    "top": 165,
+    "width": 72,
+    "height": 28,
+    "confidence": 92
+  },
+  {
+    "text": "St.,",
+    "left": 399,
+    "top": 165,
+    "width": 41,
+    "height": 26,
+    "confidence": 92
+  },
+  {
+    "text": "New",
+    "left": 452,
+    "top": 165,
+    "width": 57,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "York,",
+    "left": 517,
+    "top": 163,
+    "width": 69,
+    "height": 28,
+    "confidence": 96
+  },
+  {
+    "text": "NY",
+    "left": 598,
+    "top": 165,
+    "width": 37,
+    "height": 22,
+    "confidence": 95
+  },
+  {
+    "text": "12123",
+    "left": 646,
+    "top": 165,
+    "width": 83,
+    "height": 22,
+    "confidence": 95
+  },
+  {
+    "text": "Mary",
+    "left": 87,
+    "top": 375,
+    "width": 58,
+    "height": 25,
+    "confidence": 93
+  },
+  {
+    "text": "G.",
+    "left": 153,
+    "top": 375,
+    "width": 24,
+    "height": 20,
+    "confidence": 92
+  },
+  {
+    "text": "Orta",
+    "left": 186,
+    "top": 375,
+    "width": 52,
+    "height": 20,
+    "confidence": 95
+  },
+  {
+    "text": "Account",
+    "left": 679,
+    "top": 376,
+    "width": 98,
+    "height": 19,
+    "confidence": 92
+  },
+  {
+    "text": "Number:",
+    "left": 785,
+    "top": 374,
+    "width": 102,
+    "height": 21,
+    "confidence": 91
+  },
+  {
+    "text": "1234567890123",
+    "left": 929,
+    "top": 375,
+    "width": 198,
+    "height": 21,
+    "confidence": 89
+  },
+  {
+    "text": "1459",
+    "left": 89,
+    "top": 424,
+    "width": 59,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "Sherman",
+    "left": 157,
+    "top": 423,
+    "width": 103,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "St.",
+    "left": 269,
+    "top": 424,
+    "width": 30,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "Statement",
+    "left": 679,
+    "top": 424,
+    "width": 121,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "Date:",
+    "left": 809,
+    "top": 425,
+    "width": 60,
+    "height": 20,
+    "confidence": 95
+  },
+  {
+    "text": "3/1/2022",
+    "left": 927,
+    "top": 424,
+    "width": 117,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Salina,",
+    "left": 87,
+    "top": 473,
+    "width": 76,
+    "height": 24,
+    "confidence": 93
+  },
+  {
+    "text": "KS",
+    "left": 173,
+    "top": 473,
+    "width": 28,
+    "height": 22,
+    "confidence": 90
+  },
+  {
+    "text": "67401",
+    "left": 211,
+    "top": 473,
+    "width": 75,
+    "height": 22,
+    "confidence": 95
+  },
+  {
+    "text": "Period",
+    "left": 681,
+    "top": 473,
+    "width": 72,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "Covered:",
+    "left": 763,
+    "top": 473,
+    "width": 104,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "2/1/2022",
+    "left": 927,
+    "top": 473,
+    "width": 117,
+    "height": 25,
+    "confidence": 93
+  },
+  {
+    "text": "-",
+    "left": 1055,
+    "top": 483,
+    "width": 12,
+    "height": 5,
+    "confidence": 43
+  },
+  {
+    "text": "3/1/2022",
+    "left": 1077,
+    "top": 473,
+    "width": 117,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "Account",
+    "left": 86,
+    "top": 616,
+    "width": 98,
+    "height": 20,
+    "confidence": 96
+  },
+  {
+    "text": "Summary",
+    "left": 191,
+    "top": 615,
+    "width": 112,
+    "height": 26,
+    "confidence": 96
+  },
+  {
+    "text": "Balance",
+    "left": 88,
+    "top": 664,
+    "width": 88,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "on",
+    "left": 185,
+    "top": 669,
+    "width": 29,
+    "height": 16,
+    "confidence": 96
+  },
+  {
+    "text": "March",
+    "left": 224,
+    "top": 664,
+    "width": 71,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "1:",
+    "left": 306,
+    "top": 665,
+    "width": 20,
+    "height": 20,
+    "confidence": 96
+  },
+  {
+    "text": "$25,032.23",
+    "left": 412,
+    "top": 664,
+    "width": 137,
+    "height": 25,
+    "confidence": 92
+  },
+  {
+    "text": "Total",
+    "left": 85,
+    "top": 713,
+    "width": 61,
+    "height": 22,
+    "confidence": 95
+  },
+  {
+    "text": "Money",
+    "left": 157,
+    "top": 715,
+    "width": 77,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "In:",
+    "left": 243,
+    "top": 714,
+    "width": 27,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "$10,234.23",
+    "left": 412,
+    "top": 714,
+    "width": 137,
+    "height": 24,
+    "confidence": 94
+  },
+  {
+    "text": "Total",
+    "left": 85,
+    "top": 763,
+    "width": 61,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "Money",
+    "left": 157,
+    "top": 764,
+    "width": 77,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "Out:",
+    "left": 242,
+    "top": 763,
+    "width": 49,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "$10,532.51",
+    "left": 412,
+    "top": 763,
+    "width": 138,
+    "height": 25,
+    "confidence": 93
+  },
+  {
+    "text": "Transactions",
+    "left": 85,
+    "top": 888,
+    "width": 154,
+    "height": 21,
+    "confidence": 95
+  },
+  {
+    "text": "02/01",
+    "left": 87,
+    "top": 1011,
+    "width": 74,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "PGD",
+    "left": 257,
+    "top": 1012,
+    "width": 49,
+    "height": 21,
+    "confidence": 91
+  },
+  {
+    "text": "EasyPay",
+    "left": 315,
+    "top": 1012,
+    "width": 92,
+    "height": 25,
+    "confidence": 91
+  },
+  {
+    "text": "Debit",
+    "left": 416,
+    "top": 1011,
+    "width": 63,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "203.24",
+    "left": 764,
+    "top": 1011,
+    "width": 83,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "22,098.23",
+    "left": 1153,
+    "top": 1011,
+    "width": 122,
+    "height": 25,
+    "confidence": 95
+  },
+  {
+    "text": "02/02",
+    "left": 87,
+    "top": 1077,
+    "width": 73,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "AB&B",
+    "left": 255,
+    "top": 1077,
+    "width": 64,
+    "height": 20,
+    "confidence": 80
+  },
+  {
+    "text": "Online",
+    "left": 327,
+    "top": 1076,
+    "width": 77,
+    "height": 21,
+    "confidence": 92
+  },
+  {
+    "text": "Payment*****",
+    "left": 413,
+    "top": 1077,
+    "width": 160,
+    "height": 24,
+    "confidence": 91
+  },
+  {
+    "text": "71.23",
+    "left": 764,
+    "top": 1077,
+    "width": 67,
+    "height": 20,
+    "confidence": 64
+  },
+  {
+    "text": "22,027.00",
+    "left": 1153,
+    "top": 1073,
+    "width": 123,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "|",
+    "left": 1313,
+    "top": 1061,
+    "width": 2,
+    "height": 57,
+    "confidence": 92
+  },
+  {
+    "text": "02/04",
+    "left": 87,
+    "top": 1138,
+    "width": 73,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Check",
+    "left": 257,
+    "top": 1137,
+    "width": 73,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "No,",
+    "left": 339,
+    "top": 1138,
+    "width": 38,
+    "height": 21,
+    "confidence": 77
+  },
+  {
+    "text": "2345",
+    "left": 387,
+    "top": 1138,
+    "width": 60,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "450.00",
+    "left": 976,
+    "top": 1138,
+    "width": 85,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "22,477.00",
+    "left": 1153,
+    "top": 1135,
+    "width": 123,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "02/05",
+    "left": 87,
+    "top": 1199,
+    "width": 73,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "Payroll",
+    "left": 257,
+    "top": 1199,
+    "width": 78,
+    "height": 26,
+    "confidence": 96
+  },
+  {
+    "text": "Direct",
+    "left": 345,
+    "top": 1200,
+    "width": 70,
+    "height": 21,
+    "confidence": 95
+  },
+  {
+    "text": "Dep",
+    "left": 425,
+    "top": 1200,
+    "width": 45,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "23422342",
+    "left": 480,
+    "top": 1199,
+    "width": 121,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "Giants",
+    "left": 612,
+    "top": 1200,
+    "width": 75,
+    "height": 21,
+    "confidence": 92
+  },
+  {
+    "text": "2,534.65",
+    "left": 977,
+    "top": 1199,
+    "width": 106,
+    "height": 25,
+    "confidence": 94
+  },
+  {
+    "text": "25,011.65",
+    "left": 1153,
+    "top": 1197,
+    "width": 122,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "|",
+    "left": 1313,
+    "top": 1185,
+    "width": 2,
+    "height": 56,
+    "confidence": 92
+  },
+  {
+    "text": "02/06",
+    "left": 87,
+    "top": 1261,
+    "width": 74,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "Signature",
+    "left": 256,
+    "top": 1261,
+    "width": 113,
+    "height": 26,
+    "confidence": 96
+  },
+  {
+    "text": "POS",
+    "left": 379,
+    "top": 1261,
+    "width": 44,
+    "height": 21,
+    "confidence": 97
+  },
+  {
+    "text": "Debit",
+    "left": 433,
+    "top": 1261,
+    "width": 62,
+    "height": 22,
+    "confidence": 93
+  },
+  {
+    "text": "-",
+    "left": 504,
+    "top": 1271,
+    "width": 13,
+    "height": 5,
+    "confidence": 89
+  },
+  {
+    "text": "TJP",
+    "left": 525,
+    "top": 1262,
+    "width": 38,
+    "height": 23,
+    "confidence": 86
+  },
+  {
+    "text": "84.50",
+    "left": 764,
+    "top": 1261,
+    "width": 68,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "24,927.15",
+    "left": 1153,
+    "top": 1258,
+    "width": 122,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "02/07",
+    "left": 87,
+    "top": 1323,
+    "width": 74,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Check",
+    "left": 257,
+    "top": 1322,
+    "width": 72,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "No.",
+    "left": 339,
+    "top": 1324,
+    "width": 38,
+    "height": 19,
+    "confidence": 96
+  },
+  {
+    "text": "234",
+    "left": 387,
+    "top": 1323,
+    "width": 45,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "1,400.00",
+    "left": 765,
+    "top": 1323,
+    "width": 106,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "23,527.15",
+    "left": 1153,
+    "top": 1320,
+    "width": 122,
+    "height": 24,
+    "confidence": 94
+  },
+  {
+    "text": "|",
+    "left": 1313,
+    "top": 1308,
+    "width": 2,
+    "height": 56,
+    "confidence": 90
+  },
+  {
+    "text": "02/08",
+    "left": 87,
+    "top": 1385,
+    "width": 74,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "Check",
+    "left": 257,
+    "top": 1384,
+    "width": 72,
+    "height": 21,
+    "confidence": 95
+  },
+  {
+    "text": "No.",
+    "left": 339,
+    "top": 1385,
+    "width": 38,
+    "height": 20,
+    "confidence": 94
+  },
+  {
+    "text": "342",
+    "left": 387,
+    "top": 1385,
+    "width": 44,
+    "height": 20,
+    "confidence": 96
+  },
+  {
+    "text": "25.00",
+    "left": 977,
+    "top": 1385,
+    "width": 68,
+    "height": 20,
+    "confidence": 96
+  },
+  {
+    "text": "23,552.15",
+    "left": 1153,
+    "top": 1381,
+    "width": 122,
+    "height": 25,
+    "confidence": 93
+  },
+  {
+    "text": "02/09",
+    "left": 87,
+    "top": 1447,
+    "width": 74,
+    "height": 24,
+    "confidence": 94
+  },
+  {
+    "text": "FPB",
+    "left": 257,
+    "top": 1447,
+    "width": 40,
+    "height": 20,
+    "confidence": 90
+  },
+  {
+    "text": "AutoPay****",
+    "left": 305,
+    "top": 1447,
+    "width": 144,
+    "height": 24,
+    "confidence": 91
+  },
+  {
+    "text": "Credit",
+    "left": 458,
+    "top": 1446,
+    "width": 73,
+    "height": 21,
+    "confidence": 95
+  },
+  {
+    "text": "Card",
+    "left": 539,
+    "top": 1446,
+    "width": 54,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "456.02",
+    "left": 763,
+    "top": 1447,
+    "width": 84,
+    "height": 20,
+    "confidence": 95
+  },
+  {
+    "text": "23,096.13",
+    "left": 1153,
+    "top": 1443,
+    "width": 122,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "|",
+    "left": 1313,
+    "top": 1431,
+    "width": 2,
+    "height": 57,
+    "confidence": 91
+  },
+  {
+    "text": "02/08",
+    "left": 87,
+    "top": 1508,
+    "width": 74,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Check",
+    "left": 257,
+    "top": 1507,
+    "width": 73,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "No.",
+    "left": 339,
+    "top": 1509,
+    "width": 38,
+    "height": 20,
+    "confidence": 93
+  },
+  {
+    "text": "123",
+    "left": 389,
+    "top": 1508,
+    "width": 42,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "25.00",
+    "left": 977,
+    "top": 1508,
+    "width": 68,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "23,552.15",
+    "left": 1153,
+    "top": 1505,
+    "width": 121,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "02/09",
+    "left": 87,
+    "top": 1569,
+    "width": 74,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "FPB",
+    "left": 257,
+    "top": 1570,
+    "width": 40,
+    "height": 21,
+    "confidence": 89
+  },
+  {
+    "text": "AutoPay****",
+    "left": 305,
+    "top": 1570,
+    "width": 144,
+    "height": 25,
+    "confidence": 90
+  },
+  {
+    "text": "Credit",
+    "left": 458,
+    "top": 1569,
+    "width": 73,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "Card",
+    "left": 539,
+    "top": 1569,
+    "width": 54,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "156.02",
+    "left": 765,
+    "top": 1569,
+    "width": 82,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "23,096.13",
+    "left": 1153,
+    "top": 1569,
+    "width": 122,
+    "height": 25,
+    "confidence": 95
+  },
+  {
+    "text": "|",
+    "left": 1313,
+    "top": 1555,
+    "width": 2,
+    "height": 56,
+    "confidence": 92
+  },
+  {
+    "text": "02/08",
+    "left": 87,
+    "top": 1631,
+    "width": 74,
+    "height": 25,
+    "confidence": 95
+  },
+  {
+    "text": "Cash",
+    "left": 257,
+    "top": 1631,
+    "width": 57,
+    "height": 21,
+    "confidence": 96
+  },
+  {
+    "text": "Deposit",
+    "left": 324,
+    "top": 1632,
+    "width": 91,
+    "height": 25,
+    "confidence": 95
+  },
+  {
+    "text": "25.00",
+    "left": 977,
+    "top": 1631,
+    "width": 68,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "23,552.15",
+    "left": 1153,
+    "top": 1631,
+    "width": 121,
+    "height": 24,
+    "confidence": 93
+  }
+]

@@ -1,0 +1,1434 @@
+[
+  {
+    "text": "x",
+    "left": 51,
+    "top": 14,
+    "width": 42,
+    "height": 75,
+    "confidence": 23
+  },
+  {
+    "text": "ABC",
+    "left": 133,
+    "top": 26,
+    "width": 181,
+    "height": 79,
+    "confidence": 96
+  },
+  {
+    "text": "BANK",
+    "left": 338,
+    "top": 26,
+    "width": 253,
+    "height": 79,
+    "confidence": 96
+  },
+  {
+    "text": "Statement",
+    "left": 648,
+    "top": 59,
+    "width": 169,
+    "height": 32,
+    "confidence": 96
+  },
+  {
+    "text": "Ending",
+    "left": 827,
+    "top": 59,
+    "width": 123,
+    "height": 41,
+    "confidence": 96
+  },
+  {
+    "text": "09/21/2021",
+    "left": 962,
+    "top": 59,
+    "width": 187,
+    "height": 32,
+    "confidence": 96
+  },
+  {
+    "text": "Page",
+    "left": 1163,
+    "top": 60,
+    "width": 84,
+    "height": 40,
+    "confidence": 94
+  },
+  {
+    "text": "2",
+    "left": 1257,
+    "top": 60,
+    "width": 20,
+    "height": 31,
+    "confidence": 94
+  },
+  {
+    "text": "of",
+    "left": 1290,
+    "top": 59,
+    "width": 39,
+    "height": 32,
+    "confidence": 96
+  },
+  {
+    "text": "2",
+    "left": 1335,
+    "top": 60,
+    "width": 20,
+    "height": 31,
+    "confidence": 96
+  },
+  {
+    "text": "Look",
+    "left": 119,
+    "top": 212,
+    "width": 72,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "over",
+    "left": 200,
+    "top": 219,
+    "width": 67,
+    "height": 20,
+    "confidence": 96
+  },
+  {
+    "text": "all",
+    "left": 276,
+    "top": 212,
+    "width": 40,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "transactions",
+    "left": 324,
+    "top": 212,
+    "width": 189,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "ABC",
+    "left": 33,
+    "top": 356,
+    "width": 66,
+    "height": 37,
+    "confidence": 96
+  },
+  {
+    "text": "veumnben",
+    "left": 103,
+    "top": 259,
+    "width": 220,
+    "height": 134,
+    "confidence": 0
+  },
+  {
+    "text": "CHEKING",
+    "left": 332,
+    "top": 360,
+    "width": 136,
+    "height": 24,
+    "confidence": 92
+  },
+  {
+    "text": "XXXXXXXX1284",
+    "left": 474,
+    "top": 361,
+    "width": 236,
+    "height": 22,
+    "confidence": 80
+  },
+  {
+    "text": "(continued)",
+    "left": 719,
+    "top": 359,
+    "width": 138,
+    "height": 29,
+    "confidence": 90
+  },
+  {
+    "text": "0",
+    "left": 25,
+    "top": 381,
+    "width": 1393,
+    "height": 24,
+    "confidence": 32
+  },
+  {
+    "text": "0",
+    "left": 930,
+    "top": 377,
+    "width": 4,
+    "height": 37,
+    "confidence": 28
+  },
+  {
+    "text": "9333900",
+    "left": 942,
+    "top": 381,
+    "width": 476,
+    "height": 24,
+    "confidence": 28
+  },
+  {
+    "text": "Primary",
+    "left": 38,
+    "top": 400,
+    "width": 109,
+    "height": 29,
+    "confidence": 93
+  },
+  {
+    "text": "Chekin",
+    "left": 155,
+    "top": 399,
+    "width": 91,
+    "height": 24,
+    "confidence": 92
+  },
+  {
+    "text": "Paycheck",
+    "left": 1189,
+    "top": 402,
+    "width": 141,
+    "height": 34,
+    "confidence": 96
+  },
+  {
+    "text": "Account",
+    "left": 37,
+    "top": 478,
+    "width": 108,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "svi",
+    "left": 152,
+    "top": 477,
+    "width": 95,
+    "height": 30,
+    "confidence": 44
+  },
+  {
+    "text": "\\",
+    "left": 268,
+    "top": 405,
+    "width": 29,
+    "height": 123,
+    "confidence": 70
+  },
+  {
+    "text": "Post",
+    "left": 38,
+    "top": 517,
+    "width": 55,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "Date",
+    "left": 100,
+    "top": 517,
+    "width": 61,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "Debits",
+    "left": 834,
+    "top": 517,
+    "width": 82,
+    "height": 23,
+    "confidence": 75
+  },
+  {
+    "text": "_",
+    "left": 949,
+    "top": 551,
+    "width": 9,
+    "height": 1,
+    "confidence": 60
+  },
+  {
+    "text": "Credits",
+    "left": 1061,
+    "top": 513,
+    "width": 93,
+    "height": 37,
+    "confidence": 96
+  },
+  {
+    "text": "Balance",
+    "left": 1334,
+    "top": 517,
+    "width": 103,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "09/10/2021",
+    "left": 38,
+    "top": 551,
+    "width": 134,
+    "height": 29,
+    "confidence": 95
+  },
+  {
+    "text": "Signature",
+    "left": 191,
+    "top": 555,
+    "width": 115,
+    "height": 31,
+    "confidence": 96
+  },
+  {
+    "text": "POS",
+    "left": 314,
+    "top": 556,
+    "width": 54,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Debit",
+    "left": 377,
+    "top": 555,
+    "width": 67,
+    "height": 25,
+    "confidence": 87
+  },
+  {
+    "text": "09/08",
+    "left": 451,
+    "top": 556,
+    "width": 68,
+    "height": 24,
+    "confidence": 87
+  },
+  {
+    "text": "GIANT",
+    "left": 528,
+    "top": 556,
+    "width": 95,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "FOOD",
+    "left": 630,
+    "top": 556,
+    "width": 81,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "|",
+    "left": 719,
+    "top": 557,
+    "width": 9,
+    "height": 22,
+    "confidence": 91
+  },
+  {
+    "text": "$78.22",
+    "left": 835,
+    "top": 556,
+    "width": 82,
+    "height": 24,
+    "confidence": 74
+  },
+  {
+    "text": "6,806.09",
+    "left": 1331,
+    "top": 557,
+    "width": 105,
+    "height": 30,
+    "confidence": 96
+  },
+  {
+    "text": "09/10/2021",
+    "left": 38,
+    "top": 596,
+    "width": 134,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "LA",
+    "left": 190,
+    "top": 596,
+    "width": 47,
+    "height": 23,
+    "confidence": 47
+  },
+  {
+    "text": "FITNESS",
+    "left": 245,
+    "top": 595,
+    "width": 118,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "$15.38",
+    "left": 837,
+    "top": 595,
+    "width": 83,
+    "height": 25,
+    "confidence": 66
+  },
+  {
+    "text": "6,790.71",
+    "left": 1331,
+    "top": 595,
+    "width": 102,
+    "height": 28,
+    "confidence": 96
+  },
+  {
+    "text": "09/11/2021",
+    "left": 38,
+    "top": 636,
+    "width": 134,
+    "height": 23,
+    "confidence": 81
+  },
+  {
+    "text": "FT&T",
+    "left": 190,
+    "top": 635,
+    "width": 79,
+    "height": 24,
+    "confidence": 82
+  },
+  {
+    "text": "MOBILITY",
+    "left": 275,
+    "top": 635,
+    "width": 147,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "ONLINE",
+    "left": 431,
+    "top": 635,
+    "width": 112,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "PMT",
+    "left": 550,
+    "top": 636,
+    "width": 63,
+    "height": 23,
+    "confidence": 79
+  },
+  {
+    "text": "$100.30",
+    "left": 822,
+    "top": 635,
+    "width": 98,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "6,690.41",
+    "left": 1331,
+    "top": 635,
+    "width": 105,
+    "height": 31,
+    "confidence": 89
+  },
+  {
+    "text": "09/14/2021",
+    "left": 38,
+    "top": 674,
+    "width": 133,
+    "height": 24,
+    "confidence": 92
+  },
+  {
+    "text": "DEPOSIT",
+    "left": 191,
+    "top": 674,
+    "width": 124,
+    "height": 24,
+    "confidence": 93
+  },
+  {
+    "text": "$500.48",
+    "left": 1065,
+    "top": 674,
+    "width": 97,
+    "height": 24,
+    "confidence": 94
+  },
+  {
+    "text": "7,190.89",
+    "left": 1331,
+    "top": 674,
+    "width": 105,
+    "height": 28,
+    "confidence": 96
+  },
+  {
+    "text": "09/14/2021",
+    "left": 38,
+    "top": 713,
+    "width": 134,
+    "height": 24,
+    "confidence": 58
+  },
+  {
+    "text": "DIRECT",
+    "left": 190,
+    "top": 713,
+    "width": 110,
+    "height": 24,
+    "confidence": 58
+  },
+  {
+    "text": "DEP",
+    "left": 307,
+    "top": 714,
+    "width": 56,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "CS257634",
+    "left": 993,
+    "top": 696,
+    "width": 171,
+    "height": 73,
+    "confidence": 36
+  },
+  {
+    "text": ">)",
+    "left": 1187,
+    "top": 696,
+    "width": 25,
+    "height": 73,
+    "confidence": 40
+  },
+  {
+    "text": "9,767.23",
+    "left": 1330,
+    "top": 713,
+    "width": 105,
+    "height": 24,
+    "confidence": 87
+  },
+  {
+    "text": "09/14/2021",
+    "left": 38,
+    "top": 753,
+    "width": 134,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "Signature",
+    "left": 191,
+    "top": 753,
+    "width": 116,
+    "height": 29,
+    "confidence": 95
+  },
+  {
+    "text": "POS",
+    "left": 314,
+    "top": 753,
+    "width": 55,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Debit",
+    "left": 377,
+    "top": 753,
+    "width": 67,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "09/13",
+    "left": 451,
+    "top": 753,
+    "width": 68,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "MD",
+    "left": 528,
+    "top": 753,
+    "width": 48,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "GIANT",
+    "left": 584,
+    "top": 753,
+    "width": 95,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "FOOD",
+    "left": 686,
+    "top": 753,
+    "width": 81,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "$15.40",
+    "left": 843,
+    "top": 752,
+    "width": 83,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "9,751",
+    "left": 1327,
+    "top": 753,
+    "width": 64,
+    "height": 27,
+    "confidence": 83
+  },
+  {
+    "text": "83",
+    "left": 1397,
+    "top": 753,
+    "width": 36,
+    "height": 28,
+    "confidence": 37
+  },
+  {
+    "text": "09/17/2021_",
+    "left": 38,
+    "top": 793,
+    "width": 133,
+    "height": 24,
+    "confidence": 91
+  },
+  {
+    "text": "ATM",
+    "left": 190,
+    "top": 793,
+    "width": 67,
+    "height": 23,
+    "confidence": 93
+  },
+  {
+    "text": "Withdrawal_",
+    "left": 265,
+    "top": 792,
+    "width": 142,
+    "height": 24,
+    "confidence": 92
+  },
+  {
+    "text": "09/15",
+    "left": 424,
+    "top": 792,
+    "width": 67,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "WV",
+    "left": 499,
+    "top": 793,
+    "width": 51,
+    "height": 23,
+    "confidence": 95
+  },
+  {
+    "text": "INWOOD",
+    "left": 558,
+    "top": 792,
+    "width": 124,
+    "height": 25,
+    "confidence": 95
+  },
+  {
+    "text": "$350.00",
+    "left": 831,
+    "top": 793,
+    "width": 98,
+    "height": 24,
+    "confidence": 35
+  },
+  {
+    "text": "9,401.83",
+    "left": 1331,
+    "top": 793,
+    "width": 104,
+    "height": 29,
+    "confidence": 88
+  },
+  {
+    "text": "09/17/2021",
+    "left": 38,
+    "top": 832,
+    "width": 134,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "Signature",
+    "left": 191,
+    "top": 831,
+    "width": 116,
+    "height": 30,
+    "confidence": 95
+  },
+  {
+    "text": "POS",
+    "left": 314,
+    "top": 832,
+    "width": 55,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Debit",
+    "left": 377,
+    "top": 831,
+    "width": 67,
+    "height": 24,
+    "confidence": 94
+  },
+  {
+    "text": "09/16",
+    "left": 451,
+    "top": 831,
+    "width": 69,
+    "height": 25,
+    "confidence": 94
+  },
+  {
+    "text": "MD",
+    "left": 528,
+    "top": 833,
+    "width": 48,
+    "height": 22,
+    "confidence": 96
+  },
+  {
+    "text": "GIANT",
+    "left": 584,
+    "top": 832,
+    "width": 95,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "FOOD",
+    "left": 685,
+    "top": 832,
+    "width": 82,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "$12.48",
+    "left": 843,
+    "top": 832,
+    "width": 83,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "9,389.35",
+    "left": 1327,
+    "top": 833,
+    "width": 106,
+    "height": 26,
+    "confidence": 82
+  },
+  {
+    "text": "09/17/2021",
+    "left": 38,
+    "top": 871,
+    "width": 133,
+    "height": 24,
+    "confidence": 77
+  },
+  {
+    "text": "Signature",
+    "left": 191,
+    "top": 871,
+    "width": 116,
+    "height": 30,
+    "confidence": 77
+  },
+  {
+    "text": "POS",
+    "left": 314,
+    "top": 871,
+    "width": 55,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Debit",
+    "left": 377,
+    "top": 871,
+    "width": 67,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "09/15",
+    "left": 451,
+    "top": 871,
+    "width": 68,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "MD",
+    "left": 528,
+    "top": 871,
+    "width": 48,
+    "height": 24,
+    "confidence": 94
+  },
+  {
+    "text": "GIANT",
+    "left": 584,
+    "top": 871,
+    "width": 95,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "FOOD",
+    "left": 685,
+    "top": 871,
+    "width": 82,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "$35.80",
+    "left": 843,
+    "top": 871,
+    "width": 84,
+    "height": 25,
+    "confidence": 94
+  },
+  {
+    "text": "9,353.55",
+    "left": 1327,
+    "top": 871,
+    "width": 105,
+    "height": 31,
+    "confidence": 86
+  },
+  {
+    "text": "09/18/2021",
+    "left": 38,
+    "top": 910,
+    "width": 134,
+    "height": 25,
+    "confidence": 94
+  },
+  {
+    "text": "THE",
+    "left": 190,
+    "top": 911,
+    "width": 59,
+    "height": 22,
+    "confidence": 94
+  },
+  {
+    "text": "HOME",
+    "left": 256,
+    "top": 910,
+    "width": 89,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "DEPOT",
+    "left": 353,
+    "top": 910,
+    "width": 98,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "ONLINE",
+    "left": 458,
+    "top": 910,
+    "width": 112,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "PMT",
+    "left": 578,
+    "top": 911,
+    "width": 62,
+    "height": 22,
+    "confidence": 95
+  },
+  {
+    "text": "POS",
+    "left": 648,
+    "top": 910,
+    "width": 53,
+    "height": 24,
+    "confidence": 95
+  },
+  {
+    "text": "$8.35",
+    "left": 860,
+    "top": 910,
+    "width": 67,
+    "height": 25,
+    "confidence": 95
+  },
+  {
+    "text": "9,345.20",
+    "left": 1331,
+    "top": 911,
+    "width": 105,
+    "height": 27,
+    "confidence": 95
+  },
+  {
+    "text": "09/18/2021",
+    "left": 38,
+    "top": 950,
+    "width": 134,
+    "height": 24,
+    "confidence": 62
+  },
+  {
+    "text": "_OORETIRE",
+    "left": 198,
+    "top": 950,
+    "width": 135,
+    "height": 23,
+    "confidence": 43
+  },
+  {
+    "text": "0503R3030",
+    "left": 342,
+    "top": 950,
+    "width": 140,
+    "height": 23,
+    "confidence": 91
+  },
+  {
+    "text": "$528.12",
+    "left": 829,
+    "top": 949,
+    "width": 98,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "8,817.08",
+    "left": 1331,
+    "top": 950,
+    "width": 105,
+    "height": 29,
+    "confidence": 92
+  },
+  {
+    "text": "09/20/2021",
+    "left": 38,
+    "top": 989,
+    "width": 134,
+    "height": 24,
+    "confidence": 70
+  },
+  {
+    "text": "323LA@71557195",
+    "left": 198,
+    "top": 989,
+    "width": 231,
+    "height": 32,
+    "confidence": 70
+  },
+  {
+    "text": "$489.57",
+    "left": 831,
+    "top": 989,
+    "width": 98,
+    "height": 25,
+    "confidence": 96
+  },
+  {
+    "text": "8,327.51",
+    "left": 1331,
+    "top": 989,
+    "width": 102,
+    "height": 28,
+    "confidence": 95
+  },
+  {
+    "text": "09/21/2021",
+    "left": 38,
+    "top": 1029,
+    "width": 134,
+    "height": 24,
+    "confidence": 87
+  },
+  {
+    "text": "Ending",
+    "left": 198,
+    "top": 1029,
+    "width": 94,
+    "height": 29,
+    "confidence": 87
+  },
+  {
+    "text": "Balance",
+    "left": 299,
+    "top": 1029,
+    "width": 103,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "8,327.51",
+    "left": 1331,
+    "top": 1029,
+    "width": 103,
+    "height": 28,
+    "confidence": 92
+  },
+  {
+    "text": "Daily",
+    "left": 38,
+    "top": 1107,
+    "width": 69,
+    "height": 30,
+    "confidence": 96
+  },
+  {
+    "text": "Balances",
+    "left": 114,
+    "top": 1108,
+    "width": 113,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "Date",
+    "left": 39,
+    "top": 1147,
+    "width": 60,
+    "height": 23,
+    "confidence": 95
+  },
+  {
+    "text": "Amount",
+    "left": 365,
+    "top": 1147,
+    "width": 107,
+    "height": 23,
+    "confidence": 95
+  },
+  {
+    "text": "Date",
+    "left": 532,
+    "top": 1147,
+    "width": 60,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "Amount",
+    "left": 859,
+    "top": 1147,
+    "width": 106,
+    "height": 23,
+    "confidence": 23
+  },
+  {
+    "text": "_Date",
+    "left": 1003,
+    "top": 1147,
+    "width": 60,
+    "height": 22,
+    "confidence": 83
+  },
+  {
+    "text": "Amount",
+    "left": 1330,
+    "top": 1146,
+    "width": 107,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "09/04/2021",
+    "left": 38,
+    "top": 1182,
+    "width": 134,
+    "height": 37,
+    "confidence": 96
+  },
+  {
+    "text": "19,120.43",
+    "left": 367,
+    "top": 1187,
+    "width": 116,
+    "height": 28,
+    "confidence": 66
+  },
+  {
+    "text": "09/10/2021",
+    "left": 530,
+    "top": 1185,
+    "width": 133,
+    "height": 25,
+    "confidence": 77
+  },
+  {
+    "text": "6,790.71",
+    "left": 862,
+    "top": 1187,
+    "width": 102,
+    "height": 28,
+    "confidence": 85
+  },
+  {
+    "text": "09/18/2021",
+    "left": 998,
+    "top": 1186,
+    "width": 134,
+    "height": 24,
+    "confidence": 78
+  },
+  {
+    "text": "8,817.08",
+    "left": 1331,
+    "top": 1187,
+    "width": 105,
+    "height": 27,
+    "confidence": 95
+  },
+  {
+    "text": "09/05/2021",
+    "left": 38,
+    "top": 1221,
+    "width": 134,
+    "height": 38,
+    "confidence": 96
+  },
+  {
+    "text": "7,017.64",
+    "left": 378,
+    "top": 1225,
+    "width": 105,
+    "height": 28,
+    "confidence": 85
+  },
+  {
+    "text": "09/11/2021",
+    "left": 530,
+    "top": 1225,
+    "width": 133,
+    "height": 24,
+    "confidence": 79
+  },
+  {
+    "text": "6,690.41",
+    "left": 862,
+    "top": 1225,
+    "width": 102,
+    "height": 29,
+    "confidence": 88
+  },
+  {
+    "text": "09/20/2021",
+    "left": 998,
+    "top": 1225,
+    "width": 134,
+    "height": 24,
+    "confidence": 88
+  },
+  {
+    "text": "8,327.51",
+    "left": 1331,
+    "top": 1226,
+    "width": 103,
+    "height": 27,
+    "confidence": 91
+  },
+  {
+    "text": "09/06/2021",
+    "left": 38,
+    "top": 1261,
+    "width": 133,
+    "height": 36,
+    "confidence": 96
+  },
+  {
+    "text": "6,562.32",
+    "left": 380,
+    "top": 1265,
+    "width": 105,
+    "height": 28,
+    "confidence": 76
+  },
+  {
+    "text": "09/14/2021",
+    "left": 532,
+    "top": 1264,
+    "width": 132,
+    "height": 25,
+    "confidence": 84
+  },
+  {
+    "text": "9,751,83",
+    "left": 866,
+    "top": 1265,
+    "width": 104,
+    "height": 28,
+    "confidence": 92
+  },
+  {
+    "text": "09/07/2021",
+    "left": 38,
+    "top": 1300,
+    "width": 134,
+    "height": 37,
+    "confidence": 95
+  },
+  {
+    "text": "7,039.31",
+    "left": 380,
+    "top": 1305,
+    "width": 102,
+    "height": 28,
+    "confidence": 88
+  },
+  {
+    "text": "09/17/2021",
+    "left": 532,
+    "top": 1303,
+    "width": 133,
+    "height": 25,
+    "confidence": 80
+  },
+  {
+    "text": "9,353.55",
+    "left": 866,
+    "top": 1304,
+    "width": 105,
+    "height": 28,
+    "confidence": 95
+  },
+  {
+    "text": "Overdraft",
+    "left": 38,
+    "top": 1422,
+    "width": 131,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "and",
+    "left": 176,
+    "top": 1422,
+    "width": 48,
+    "height": 23,
+    "confidence": 96
+  },
+  {
+    "text": "Returned",
+    "left": 233,
+    "top": 1422,
+    "width": 120,
+    "height": 23,
+    "confidence": 95
+  },
+  {
+    "text": "Item",
+    "left": 363,
+    "top": 1422,
+    "width": 59,
+    "height": 23,
+    "confidence": 81
+  },
+  {
+    "text": "Fees",
+    "left": 432,
+    "top": 1422,
+    "width": 55,
+    "height": 24,
+    "confidence": 96
+  },
+  {
+    "text": "Watch",
+    "left": 949,
+    "top": 1424,
+    "width": 94,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "for",
+    "left": 1054,
+    "top": 1424,
+    "width": 44,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "unexpected",
+    "left": 1108,
+    "top": 1424,
+    "width": 178,
+    "height": 34,
+    "confidence": 95
+  },
+  {
+    "text": "fees",
+    "left": 1296,
+    "top": 1424,
+    "width": 63,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "Pe",
+    "left": 40,
+    "top": 1478,
+    "width": 499,
+    "height": 82,
+    "confidence": 5
+  },
+  {
+    "text": "Total",
+    "left": 558,
+    "top": 1493,
+    "width": 82,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "for",
+    "left": 651,
+    "top": 1493,
+    "width": 46,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "this",
+    "left": 706,
+    "top": 1493,
+    "width": 55,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "period",
+    "left": 771,
+    "top": 1493,
+    "width": 100,
+    "height": 34,
+    "confidence": 96
+  },
+  {
+    "text": "Total",
+    "left": 1015,
+    "top": 1493,
+    "width": 83,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "year-to-date",
+    "left": 1107,
+    "top": 1493,
+    "width": 190,
+    "height": 34,
+    "confidence": 95
+  },
+  {
+    "text": "\u2014o",
+    "left": 646,
+    "top": 1529,
+    "width": 94,
+    "height": 32,
+    "confidence": 0
+  },
+  {
+    "text": "EEE",
+    "left": 808,
+    "top": 1529,
+    "width": 190,
+    "height": 32,
+    "confidence": 44
+  },
+  {
+    "text": "Total",
+    "left": 59,
+    "top": 1635,
+    "width": 82,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "Returned",
+    "left": 151,
+    "top": 1635,
+    "width": 146,
+    "height": 27,
+    "confidence": 96
+  },
+  {
+    "text": "Tem",
+    "left": 307,
+    "top": 1635,
+    "width": 69,
+    "height": 27,
+    "confidence": 95
+  },
+  {
+    "text": "Fees",
+    "left": 386,
+    "top": 1635,
+    "width": 68,
+    "height": 27,
+    "confidence": 95
+  },
+  {
+    "text": "ee",
+    "left": 543,
+    "top": 1626,
+    "width": 455,
+    "height": 75,
+    "confidence": 41
+  },
+  {
+    "text": "$0.00",
+    "left": 1257,
+    "top": 1632,
+    "width": 68,
+    "height": 25,
+    "confidence": 90
+  }
+]
