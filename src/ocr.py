@@ -25,7 +25,7 @@ pre_cfg = config.get("ocr_preprocessing", {})
 
 def extract_text(image_path):
     """
-    Extracts text from an image using OCR.
+    Extracts text from an image using Tesseract OCR.
     Args:
         image_path (str): Path to the image file.
     Returns:
@@ -41,7 +41,7 @@ def extract_text(image_path):
 
 def extract_text_with_bboxes(image_path):
     """
-    Extracts text and bounding box information from an image using OCR.
+    Extracts text and bounding box information from an image using Tesseract OCR.
     Args:
         image_path (str): Path to the image file.
     Returns:

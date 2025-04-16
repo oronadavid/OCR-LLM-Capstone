@@ -32,7 +32,8 @@ def analyze_bank_statement(text, bboxes, model="llama3.2"):
         bboxes (list): List of bounding boxes from OCR.
         model (str): The LLM model to use.
     Returns:
-        str: The LLM's response."""
+        str: The LLM's response.
+    """
     response: ChatResponse = chat(model=model, messages=[
         {
             'role': 'system',
